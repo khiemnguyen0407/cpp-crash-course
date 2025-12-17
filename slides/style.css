@@ -1,0 +1,81 @@
+/*
+ * styles.css
+ * Custom CSS for Quarto Revealjs Slides (Adjusted Font Size)
+ */
+
+/* --- 0. Global Font Size Adjustment --- */
+
+/* This targets the main content area and reduces the base font size. */
+/* The default is usually 100%. Changing it to 90% or 85% will make the text smaller. */
+.reveal {
+    font-size: 50%;
+    /* Reduced base font size for all text */
+}
+
+
+/* --- 1. Headings & Titles --- */
+
+/* Style for all main headings (H1, H2, H3) */
+.reveal section h1,
+.reveal section h2,
+.reveal section h3 {
+    color: #0056b3;
+    /* A professional, deep blue color */
+    border-bottom: 1px solid #0056b3;
+    /* Underline headings for emphasis */
+    padding-bottom: 5px;
+    /* Reduced padding slightly */
+    margin-bottom: 5px;
+    /* Reduced margin */
+}
+
+/* --- 2. Code Blocks & Output --- */
+
+/* Style for the code block containers */
+.reveal pre {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure code font size is readable (kept proportional to the new base size) */
+.reveal pre code {
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 18px;
+    /* Using 1em here keeps it proportional to the new 85% base size */
+    line-height: 1.4;
+    color: #333;
+}
+
+/* --- 3. Callout Blocks (Notes) --- */
+
+/* Style the Quarto callout blocks */
+.callout-note {
+    background-color: #e6f7ff;
+    border-left: 5px solid #007bff;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+/* --- 4. Tables --- */
+
+/* Clean up tables for better lecture display */
+.reveal table {
+    margin: 20px auto;
+    width: 90%;
+}
+
+.reveal th {
+    background-color: #e9ecef;
+    color: #333;
+    font-weight: bold;
+}
+
+.reveal td,
+.reveal th {
+    padding: 10px;
+    border: 1px solid #ddd;
+}

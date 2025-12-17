@@ -1,0 +1,83 @@
+---
+title: "Understanding Variables in C++"
+author: "Your Name/Institution"
+format:
+  revealjs:
+    theme: simple
+    slide-number: true
+    show-slide-number: all
+    chalkboard: true
+    # css: styles.css # You can create this file for custom styling
+execute:
+  echo: true # Show code in output
+  eval: true # Evaluate code in output
+---
+
+# Introduction to Variables
+
+::: {.callout-note}
+A **variable** is a name given to a storage area that programs can manipulate. It's like a labeled box where you can store data!
+:::
+
+In C++, before you can use a variable, you must **declare** it. This tells the compiler:
+1.  The variable's **data type** (what kind of data it will hold).
+2.  The variable's **name** (how you'll refer to it).
+
+---
+
+# Basic Data Types
+
+C++ has several fundamental data types to handle different kinds of information.
+
+| Type    | Description                                   | Example             |
+| :------ | :-------------------------------------------- | :------------------ |
+| `int`   | Stores whole numbers (integers)               | `10`, `-500`, `0`   |
+| `double`| Stores floating-point numbers (decimals)      | `3.14`, `-0.001`    |
+| `char`  | Stores single characters                      | `'A'`, `'z'`, `'5'` |
+| `bool`  | Stores boolean values (true/false)            | `true`, `false`     |
+| `string`| Stores sequences of characters (text)         | `"Hello"`, `"C++"`  |
+
+---
+
+# Declaring and Initializing Variables
+
+You declare a variable by specifying its type and name. You can also give it an initial value (initialization).
+
+## Declaration
+```cpp
+int age;           // Declares an integer variable named 'age'
+double price;      // Declares a double variable named 'price'
+char initial;      // Declares a character variable named 'initial'
+bool isActive;     // Declares a boolean variable named 'isActive'
+// string requires #include <string>
+// std::string name; // Declares a string variable named 'name'
+```
+
+## Example
+```{c++}
+#include <iostream>
+int main() {
+    std::cout << "Hello!" << std::endl;
+    return 0;
+}
+```
+
+## Example 2
+```{cpp}
+// First, declare some variables
+int score;
+double temperature;
+char level;
+
+// Now, assign values to them
+score = 95;
+temperature = 25.5;
+level = 'B';
+
+std::cout << "Score: " << score << std::endl;
+std::cout << "Temperature: " << temperature << std::endl;
+std::cout << "Level: " << level << std::endl;
+
+score = 100; // Change the value of score
+std::cout << "New Score: " << score << std::endl;
+```
